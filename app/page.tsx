@@ -1,5 +1,4 @@
 import Biography from "@/components/Biography"
-import Link from 'next/link'
 
 export default function Home() {
   return (
