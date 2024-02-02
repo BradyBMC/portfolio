@@ -11,7 +11,6 @@ const skills = [
     { skill: "Tailwind CSS" },
     { skill: "Git" },
     { skill: "GitHub" },
-    { skill: "Jupyter Notebooks" },
   ]
 
 const Biography = () => {
@@ -29,35 +28,29 @@ const Biography = () => {
                 Get to know me!
               </h1>
               <p>
-                Hi, my name is Hosna and I am a{" "}
+                Hi, my name is Brady and I am a{" "}
                 <span className="font-bold">{"highly ambitious"}</span>,
                 <span className="font-bold">{" self-motivated"}</span>, and
                 <span className="font-bold">{" driven"}</span> software engineer
-                based in Los Angeles, CA.
+                based in Oxnard, Ca.
               </p>
               <br />
               <p>
-                I graduated from California State University, Northridge in 2019
-                with a BS in Computer Engineering and have been working in the
+                I graduated from University of California, Santa Cruz in 2023
+                with a BS in Computer Science and have been working in the
                 field ever since.
               </p>
               <br />
               <p>
-                I have a wide range of hobbies and passions that keep me busy.
-                From reading, playing sports, traveling, to making YouTube videos,
-                I am always seeking new experiences and love to keep myself
-                engaged and learning new things.
+                I have been trying not to kms here.
               </p>
               <br />
               <p>
                 I believe that you should{" "}
                 <span className="font-bold text-teal-500">
-                  never stop growing
+                  HIRE ME.
                 </span>{" "}
-                and that&#39;s what I strive to do, I have a passion for
-                technology and a desire to always push the limits of what is
-                possible. I am excited to see where my career takes me and am
-                always open to new opportunities. 🙂
+                PLEASE
               </p>
             </div>
             <div className="text-center md:w-1/2 md:text-left">

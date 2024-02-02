@@ -31,10 +31,8 @@ export default function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h1>
-                    temp
-                </h1>
             </div>
+            <Link href="/">Home</Link>
             <Link href="/resume">Resume</Link>
         </nav>
     );
