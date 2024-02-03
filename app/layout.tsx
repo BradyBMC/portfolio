@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html className="bg-blue-950">
       <head />
       <body>
         <Navbar />

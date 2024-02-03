@@ -32,8 +32,8 @@ export default function Navbar() {
         <nav>
             <div className="logo">
             </div>
-            <Link href="/">Home</Link>
-            <Link href="/resume">Resume</Link>
+            <Link href="/" className="text-gray-50">Home</Link>
+            <Link href="/resume" className="text-gray-50">Resume</Link>
         </nav>
     );
 }
