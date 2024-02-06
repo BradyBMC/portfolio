@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="bg-blue-950">
+    <html className="bg-blue-950 no-scrollbar">
       <head />
       <body>
         <Navbar />
