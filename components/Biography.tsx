@@ -3,12 +3,9 @@ import React from "react"
 const Biography = () => {
     return (
       <section id="about">
-        <div className="my-12 pb-12 md:pt-16 md:pb-48">
+        <div className="pb-12 md:pt-16 md:pb-48">
           <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left text-gray-50">
             <div className="md:w-1/2 ">
-              <h1 className="text-center text-4xl font-bold mb-6 md:text-left">
-                Brady Chan
-              </h1>
               <h1>
                 Full Stack Engineer, Nawcwd
               </h1>
