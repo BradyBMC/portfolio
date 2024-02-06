@@ -1,18 +1,5 @@
 import React from "react"
 
-const skills = [
-    { skill: "HTML" },
-    { skill: "CSS" },
-    { skill: "JavaScript" },
-    { skill: "TypeScript" },
-    { skill: "Python" },
-    { skill: "React" },
-    { skill: "Next.js" },
-    { skill: "Tailwind CSS" },
-    { skill: "Git" },
-    { skill: "GitHub" },
-  ]
-
 const Biography = () => {
     return (
       <section id="about">
@@ -50,21 +37,6 @@ const Biography = () => {
                 </span>{" "}
                 PLEASE. You should also give my friend valeria a job as well
               </p>
-            </div>
-            <div className="text-center md:w-1/2 md:text-left text-gray-50">
-              <h1 className="text-2xl font-bold mb-6 text-gray-50">My Skills</h1>
-              <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
-                {skills.map((item, idx) => {
-                  return (
-                    <p
-                      key={idx}
-                      className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                    >
-                      {item.skill}
-                    </p>
-                  )
-                })}
-              </div>
             </div>
           </div>
         </div>
