@@ -5,10 +5,7 @@ const Biography = () => {
       <section id="about">
         <div className="pb-12 md:pt-16 md:pb-48">
           <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left text-gray-50">
-            <div className="md:w-1/2 ">
-              <h1>
-                Full Stack Engineer, Nawcwd
-              </h1>
+            <div className="text-wrap md:pr-40">
               <p>
                 Hi, my name is Brady and I am a{" "}
                 <span className="font-bold">{"highly ambitious"}</span>,

@@ -10,7 +10,6 @@ export default function RootLayout({
     <html className="bg-blue-950 no-scrollbar h-dvh">
       <head />
       <body>
-        <Navbar />
         {children}
       </body>
     </html>
