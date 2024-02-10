@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
-            <div className="bg-blue-950 h-screen overflow-y-auto divide-y divide-blue-200" id='grid-container'>
+            <div className="bg-blue-950 h-screen overflow-hidden divide-y divide-blue-200" id='grid-container'>
               <Biography />
               <div className="h-96">Work Exp</div>
               <div className="h-96">Projects</div>
