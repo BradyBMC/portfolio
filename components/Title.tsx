@@ -12,11 +12,11 @@ const Title = () => {
                     <h1 className="text-6xl font-bold mb-2 md:text-left text-gray-50">
                         Brady Chan
                     </h1>
-                    <div className="text-gray-50">
+                    <div className="text-gray-50 mb-2">
                         Software Engineer at Nawcwd
                     </ div>
                     <div className="text-slate-400">
-                        I build full stack web apps and  <br /> operating systems.
+                        I build full stack web applications and  <br /> operating systems.
                     </div>
                 </ div>
             </ div>

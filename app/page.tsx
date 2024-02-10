@@ -5,42 +5,31 @@ import Title from "@/components/Title"
 import React, { useState, useEffect } from 'react'
 
 export default function Home() {
-  // const leftRef = useRef<null | HTMLDivElement>(null); 
-  // const rightRef = useRef<null | HTMLDivElement>(null); 
-  /*
-  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleWheelScroll = (event: WheelEvent) => {
+      const delta = event.deltaY || event.detail;
+      const scrollAmount = 50; // Adjust scroll amount as needed
+      const grid = document.getElementById('grid-container');
 
-  const useScrollEvent = (callback: (scrollY: number) => void) => {
-    useEffect(() => {
-      const handleScroll = () => {
-        console.log('har')
-        callback(window.scrollY);
-      };
+      if (delta < 0) {
+        // Scroll Down
+        if (grid) {
+          grid.scrollTop -= scrollAmount;
+        }
+      } else {
+        // Scroll Up
+        if (grid) {
+          grid.scrollTop += scrollAmount;
+        }
+      }
+    };
 
-      window.addEventListener('scroll', handleScroll);
+    window.addEventListener('wheel', handleWheelScroll);
 
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [callback]);
-  };
-
-  useScrollEvent((scrollPosition) => {
-    setScrollY(scrollPosition);
-  });
-  */
-    useEffect(() => {
-      const handleScroll = () => {
-        console.log(window.scrollY);
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-
+    return () => {
+      window.removeEventListener('wheel', handleWheelScroll);
+    };
+  }, []);
   return (
     <main className="mx-auto">
       <div className="flex h-screen w-full">
@@ -51,7 +40,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
-            <div className="bg-blue-950 h-screen overflow-y-auto divide-y divide-blue-200">
+            <div className="bg-blue-950 h-screen overflow-y-auto divide-y divide-blue-200" id='grid-container'>
               <Biography />
               <div className="h-96">Work Exp</div>
               <div className="h-96">Projects</div>
