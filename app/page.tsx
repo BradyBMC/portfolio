@@ -8,19 +8,15 @@ export default function Home() {
   useEffect(() => {
     const handleWheelScroll = (event: WheelEvent) => {
       const delta = event.deltaY || event.detail;
-      const scrollAmount = 50; // Adjust scroll amount as needed
+      const scrollAmount = 8; // Adjust scroll amount as needed
       const grid = document.getElementById('grid-container');
 
-      if (delta < 0) {
+      if (delta < 0 && grid) {
         // Scroll Down
-        if (grid) {
-          grid.scrollTop -= scrollAmount;
-        }
-      } else {
+        grid.scrollTop -= scrollAmount;
+      } else if (grid) {
         // Scroll Up
-        if (grid) {
-          grid.scrollTop += scrollAmount;
-        }
+        grid.scrollTop += scrollAmount;
       }
     };
 
@@ -30,6 +26,7 @@ export default function Home() {
       window.removeEventListener('wheel', handleWheelScroll);
     };
   }, []);
+
   return (
     <main className="mx-auto">
       <div className="flex h-screen w-full">
@@ -40,7 +37,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
-            <div className="bg-blue-950 h-screen overflow-hidden divide-y divide-blue-200" id='grid-container'>
+            <div className="bg-blue-950 h-screen overflow-hidden divide-y divide-blue-200" id="grid-container">
               <Biography />
               <div className="h-96">Work Exp</div>
               <div className="h-96">Projects</div>
