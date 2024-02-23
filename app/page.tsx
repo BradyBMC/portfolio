@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const handleWheelScroll = (event: WheelEvent) => {
       const delta = event.deltaY || event.detail;
-      const scrollAmount = 50; // Adjust scroll amount as needed
+      const scrollAmount = 25; // Adjust scroll amount as needed
       const grid = document.getElementById('grid-container');
 
       if (delta < 0 && grid) {

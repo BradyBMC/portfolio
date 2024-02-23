@@ -1,16 +1,6 @@
 import React, { useEffect } from "react"
 
 const Biography = () => {
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('/api/workapi');
-      const jsonData = await response.json();
-      console.log(jsonData);
-    };
-  
-    fetchData();
-  }, []);
-
   return (
     <section id="about">
       <div className="pb-12 md:pt-16 md:pb-48">

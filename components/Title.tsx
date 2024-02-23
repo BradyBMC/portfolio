@@ -16,7 +16,7 @@ const Title = () => {
                         Software Engineer at Nawcwd
                     </ div>
                     <div className="text-slate-400">
-                        I develop full stack web applications and <br /> operating systems.
+                        I develop backend software, full stack web applications, and <br /> signal processing.
                     </div>
                 </ div>
             </ div>

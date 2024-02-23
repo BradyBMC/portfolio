@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react"
 
 type JobData = {
+    Company: string,
     Date: string,
     Position: string,
     Description: string,
     Skills: Array<string>,
-  }
+}
 
 const Experience = () => {
-    const [data, setData] = useState<JobData | null>(null);
+    // const [data, setData] = useState<JobData | null>(null);
+    const [data, setData] = useState<JobData[]>([]);
     // const [isLoading, setLoading] = useState(null);
     // const [error, setError] = useState(null);
     useEffect(() => {
@@ -26,7 +28,12 @@ const Experience = () => {
         if (data === null) return (<div>...Loading</div>);
         return (
             <div>
-                {data && data.Date}
+                {data && 
+                data.map((job, index) => {
+                    return (
+                    <div key = {index}>{job.Company}</div>
+                    )})
+                }
             </div>
         );
     };
@@ -35,16 +42,17 @@ const Experience = () => {
         <section id="about">
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
                 {display_exp()
-                /*data.map((item, idx) => {
+                
+                /*data &&
+                data.Skills.map((item) => {
                     return (
                         <p
-                            key={idx}
                             className="bg-sky-900 px-4 py-0 mr-2 mt-2 text-gray-500 rounded-full text-teal-300"
                         >
-                            {item.skill}
+                            {item}
                         </p>
                     )
-                })*/}
+                }) */}
             </div>
 
         </section>
