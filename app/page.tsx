@@ -36,25 +36,25 @@ export default function Home() {
           <div className="flex-none bg-red-500 overflow-y-auto">
             <div className="flex-none bg-blue-950 grid h-screen no-scrollbar">
               <Title />
-            </div>
-            <ul className="grid grid-cols-3 gap-4 mb-6" onClick={(event: React.SyntheticEvent) => {
-              event.preventDefault();
-              const target = event.target as HTMLAnchorElement;
-              const id = target.getAttribute('href')?.replace('#', '');
-              const element = document.getElementById(String(id));
-              element?.scrollIntoView({
-                behavior: 'smooth'
-              });
-            }}>
-              <li>
-                <a href="#biography">
+              <ul className="grid grid-cols-3 gap-4 mb-6" onClick={(event: React.SyntheticEvent) => {
+                event.preventDefault();
+                const target = event.target as HTMLAnchorElement;
+                const id = target.getAttribute('href')?.replace('#', '');
+                const element = document.getElementById(String(id));
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }}>
+                <li>
+                  <a href="#biography">
                     Biography
-                </a>
-                <a href="#experience">
+                  </a>
+                  <a href="#experience">
                     Experience
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
             <div className="bg-blue-950 h-screen overflow-hidden smooth-scroll divide-y divide-blue-200" id="grid-container">

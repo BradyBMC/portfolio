@@ -27,7 +27,7 @@ export default function handler(
       Date: 'October 2023 - Present',
       Position: 'Software Engineer',
       Description: 'Omegalol what did i do here',
-      Skills: ['C++', 'FFT'],
+      Skills: ['C++', 'React.js', 'C#', 'PostgreSQL', 'Kubernetes', 'Docker'],
     },
     {
       Company: 'Researcher',
