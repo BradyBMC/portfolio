@@ -42,7 +42,6 @@ export default function Home() {
               const target = event.target as HTMLAnchorElement;
               const id = target.getAttribute('href')?.replace('#', '');
               const element = document.getElementById(String(id));
-              const grid = document.getElementById('grid-container');
               element?.scrollIntoView({
                 behavior: 'smooth'
               });

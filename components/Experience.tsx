@@ -28,7 +28,9 @@ const Experience = () => {
         if (data === null) return (<div>...Loading</div>);
         return (
             <div>
-                {data && 
+                {
+                // Iterate over all JSONobjects and jobs
+                data && 
                 data.map((job, index) => {
                     return (
                     <div key = {index}>
@@ -38,6 +40,7 @@ const Experience = () => {
                         <div>{job.Description}</div>
                         <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
                             {
+                                // Iterate over all skills in the job
                                 job.Skills.map((item, index) => {
                                     return (
                                          <p key = {index}
