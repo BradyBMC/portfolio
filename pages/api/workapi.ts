@@ -35,6 +35,13 @@ export default function handler(
       Position: 'Software Engineer',
       Description: 'Job 2',
       Skills: ['x++', 'x'],
+    },
+    {
+      Company: 'Researcher',
+      Date: 'Job 2',
+      Position: 'Software Engineer',
+      Description: 'Job 2',
+      Skills: ['x++', 'x'],
     }
   ]
 

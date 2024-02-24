@@ -31,7 +31,25 @@ const Experience = () => {
                 {data && 
                 data.map((job, index) => {
                     return (
-                    <div key = {index}>{job.Company}</div>
+                    <div key = {index}>
+                        <div>{job.Company}</div>
+                        <div>{job.Position}</div>
+                        <div>{job.Date}</div>
+                        <div>{job.Description}</div>
+                        <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
+                            {
+                                job.Skills.map((item, index) => {
+                                    return (
+                                         <p key = {index}
+                                            className="bg-sky-900 px-4 py-0 mr-2 mt-2 text-gray-500 rounded-full text-teal-300"
+                                        >
+                                            {item}
+                                        </p>                                       
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
                     )})
                 }
             </div>
@@ -39,20 +57,9 @@ const Experience = () => {
     };
 
     return (
-        <section id="about">
+        <section id="experience">
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
-                {display_exp()
-                
-                /*data &&
-                data.Skills.map((item) => {
-                    return (
-                        <p
-                            className="bg-sky-900 px-4 py-0 mr-2 mt-2 text-gray-500 rounded-full text-teal-300"
-                        >
-                            {item}
-                        </p>
-                    )
-                }) */}
+                {display_exp()}
             </div>
 
         </section>

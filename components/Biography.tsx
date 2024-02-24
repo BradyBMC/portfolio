@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 const Biography = () => {
   return (
-    <section id="about">
+    <section id="biography">
       <div className="pb-12 md:pt-16 md:pb-48">
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left text-gray-50">
           <div className="text-wrap md:pr-40">
