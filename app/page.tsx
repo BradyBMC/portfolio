@@ -6,6 +6,8 @@ import Experience from "@/components/Experience"
 import Projects from "@/components/Projects"
 import React, { useState, useEffect } from 'react'
 
+import { FaGithub, FaLinkedin, FaFileCsv } from "react-icons/fa"
+
 export default function Home() {
   useEffect(() => {
     const handleWheelScroll = (event: WheelEvent) => {
@@ -31,7 +33,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto">
-      <div className="flex md:h-screen w-full">
+      <div className="flex md:h-screen">
         <div className="flex flex-1 grid grid-cols-1 md:grid-cols-2">
           <div className="flex-none bg-red-500 overflow-y-auto">
             <div className="bg-blue-950 grid md:h-screen no-scrollbar">
@@ -57,8 +59,10 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <div>
-                Github, Linkedin, 
+              <div className="text-center space-x-16">
+                <FaGithub className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" onClick={() => window.open("https://github.com/BradyBMC", "_blank")} />
+                <FaLinkedin className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/brady-chan-84416319a/", "_blank")} />
+                <FaFileCsv className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" href={'Resume.pdf'} target="_blank" />
               </div>
             </div>
           </div>
