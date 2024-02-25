@@ -39,7 +39,7 @@ export default function handler(
     {
       Company: 'University of California Santa Cruz',
       Date: 'June - September 2022',
-      Position: 'Software Engineer',
+      Position: 'Undergraduate Research Assistant',
       Description: 'Employed a neural network to capture sequential playing patterns to learn the optimal strategies in Super Smash Bros Melee. Developed a pipeline for seamless game preprocessing and itegration to model training process.',
       Skills: ['Python', 'Tensorflow'],
     }

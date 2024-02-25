@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex-none bg-red-500 overflow-y-auto">
             <div className="flex-none bg-blue-950 grid h-screen no-scrollbar">
               <Title />
-              <ul className="grid grid-cols-3 gap-4 mb-6" onClick={(event: React.SyntheticEvent) => {
+              <ul className="text-center text-gray-50" onClick={(event: React.SyntheticEvent) => {
                 event.preventDefault();
                 const target = event.target as HTMLAnchorElement;
                 const id = target.getAttribute('href')?.replace('#', '');
@@ -45,26 +45,29 @@ export default function Home() {
                   behavior: 'smooth'
                 });
               }}>
-                <li>
-                  <a href="#biography">
+                <li className="grid md:text-lg">
+                  <a href="#biography" className="md:pb-4">
                     Biography
                   </a>
-                  <a href="#experience">
+                  <a href="#experience" className="md:pb-4">
                     Experience
                   </a>
-                  <a href="#projects">
+                  <a href="#projects" className="md:pb-4">
                     Projects
                   </a>
                 </li>
               </ul>
+              <div>
+                Final links here
+              </div>
             </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
-            <div className="bg-blue-950 h-screen overflow-hidden smooth-scroll divide-y divide-blue-200" id="grid-container">
+            <div className="bg-blue-950 h-screen overflow-hidden smooth-scroll divide-blue-200" id="grid-container">
               <Biography />
               <Experience />
               <Projects />
-              <Languages />
+              {/*<Languages />*/}
             </div>
           </div>
         </div>

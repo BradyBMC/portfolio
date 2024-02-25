@@ -33,7 +33,9 @@ const Projects = () => {
                 data.map((job, index) => {
                     return (
                     <div key = {index}>
-                            <div className="flex grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40 my-3 md:pb-2">
+                            <div className="flex grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40 my-3 md:pb-2 hover:cursor-pointer"
+                                onClick={() => window.open(job.Link, "_blank")}
+                            >
                                 <div className="text-center col-span-2">{job.Date}</div>
                                 <div className="col-span-4">
                                     <div className="text-gray-50">{job.Title}</div>
