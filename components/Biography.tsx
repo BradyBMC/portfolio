@@ -27,7 +27,7 @@ const Biography = () => {
             </p>
             <br />
             <p>
-              You can find out more about my academic journey, software engineering career, and personal projects. You can view my full professional <span className="text-gray-50 hover:text-teal-400 hover:cursor-pointer" onClick={() => window.open("Resume.pdf", "_blank")}>resume</span> here as well.
+              You can find out more about my academic journey, software engineering career, and personal projects here! You can view my full professional <span className="text-gray-50 hover:text-teal-400 hover:cursor-pointer" onClick={() => window.open("Resume.pdf", "_blank")}>resume</span> here as well.
             </p>
             {/*
             <br />
