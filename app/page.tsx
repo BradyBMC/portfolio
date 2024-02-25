@@ -48,13 +48,13 @@ export default function Home() {
                 });
               }}>
                 <li className="grid md:text-lg">
-                  <a href="#biography" className="hover:text-teal-300 md:pb-4">
+                  <a href="#biography" className="bounce mb-6 hover:text-teal-300 md:pb-4">
                     Biography
                   </a>
-                  <a href="#experience" className="hover:text-teal-300 md:pb-4">
+                  <a href="#experience" className="bounce mb-6 hover:text-teal-300 md:pb-4">
                     Experience
                   </a>
-                  <a href="#projects" className="hover:text-teal-300 md:pb-4">
+                  <a href="#projects" className="bounce hover:text-teal-300 md:pb-4">
                     Projects
                   </a>
                 </li>
