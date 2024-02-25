@@ -26,7 +26,7 @@ export default function handler(
       Company: 'Nawcwd',
       Date: 'October 2023 - Present',
       Position: 'Software Engineer',
-      Description: 'Omegalol what did i do here. Worked as a full stack web dev doing nothing lol bc i instantly lost funding',
+      Description: 'I worked as a full-stack web developer for the Navy\'s threat capability system, utilizing React.js for the frontend, C# to develop middleware services and RESTful APIs, and PostgreSQL for database retrieval and maintenance. Responsibilities included developing, testing, and deploying containerized microservices using Kubernetes and Docker.',
       Skills: ['C++', 'React.js', 'C#', 'PostgreSQL', 'Kubernetes', 'Docker'],
     },
     {

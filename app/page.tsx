@@ -6,7 +6,7 @@ import Experience from "@/components/Experience"
 import Projects from "@/components/Projects"
 import React, { useState, useEffect } from 'react'
 
-import { FaGithub, FaLinkedin, FaFileCsv } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa"
 
 export default function Home() {
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="text-center space-x-16">
                 <FaGithub className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://github.com/BradyBMC", "_blank")} />
                 <FaLinkedin className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://www.linkedin.com/in/brady-chan-84416319a/", "_blank")} />
-                <FaFileCsv className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("Resume.pdf", "_blank")} />
+                <FaFileAlt className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("Resume.pdf", "_blank")} />
               </div>
             </div>
           </div>
