@@ -48,21 +48,21 @@ export default function Home() {
                 });
               }}>
                 <li className="grid md:text-lg">
-                  <a href="#biography" className="md:pb-4">
+                  <a href="#biography" className="hover:text-teal-300 md:pb-4">
                     Biography
                   </a>
-                  <a href="#experience" className="md:pb-4">
+                  <a href="#experience" className="hover:text-teal-300 md:pb-4">
                     Experience
                   </a>
-                  <a href="#projects" className="md:pb-4">
+                  <a href="#projects" className="hover:text-teal-300 md:pb-4">
                     Projects
                   </a>
                 </li>
               </ul>
               <div className="text-center space-x-16">
-                <FaGithub className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" onClick={() => window.open("https://github.com/BradyBMC", "_blank")} />
-                <FaLinkedin className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/brady-chan-84416319a/", "_blank")} />
-                <FaFileCsv className="w-10 h-10 text-gray-50 inline hover:cursor-pointer" href={'Resume.pdf'} target="_blank" />
+                <FaGithub className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://github.com/BradyBMC", "_blank")} />
+                <FaLinkedin className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://www.linkedin.com/in/brady-chan-84416319a/", "_blank")} />
+                <FaFileCsv className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("Resume.pdf", "_blank")} />
               </div>
             </div>
           </div>
