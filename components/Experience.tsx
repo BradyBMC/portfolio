@@ -27,16 +27,16 @@ const Experience = () => {
     const display_exp = () => {
         if (data === null) return (<div>...Loading</div>);
         return (
-            <div>
+            <div className="">
                 {
                 // Iterate over all JSONobjects and jobs
                 data && 
                 data.map((job, index) => {
                     return (
                     <div key = {index}>
-                            <div className="grid grid-flow-col text-slate-400 rounded-lg hover:bg-blue-900">
-                                <div className="justify-normal">{job.Date}</div>
-                                <div className="justify-stretch">
+                            <div className="grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40">
+                                <div className="text-center col-span-2">{job.Date}</div>
+                                <div className="col-span-4">
                                     <div className="text-gray-50">{job.Position}</div>
                                     <div>{job.Company}</div>
                                     <div>{job.Description}</div>

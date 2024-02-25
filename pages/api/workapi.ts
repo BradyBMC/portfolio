@@ -26,7 +26,7 @@ export default function handler(
       Company: 'Nawcwd',
       Date: 'October 2023 - Present',
       Position: 'Software Engineer',
-      Description: 'Omegalol what did i do here',
+      Description: 'Omegalol what did i do here. Worked as a full stack web dev doing nothing lol bc i instantly lost funding',
       Skills: ['C++', 'React.js', 'C#', 'PostgreSQL', 'Kubernetes', 'Docker'],
     },
     {
