@@ -3,8 +3,8 @@ import Biography from "@/components/Biography"
 import Languages from "@/components/Languages"
 import Title from "@/components/Title"
 import Experience from "@/components/Experience"
+import Projects from "@/components/Projects"
 import React, { useState, useEffect } from 'react'
-import { ScrollLink, Element } from "react-scroll/modules"
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +52,9 @@ export default function Home() {
                   <a href="#experience">
                     Experience
                   </a>
+                  <a href="#projects">
+                    Projects
+                  </a>
                 </li>
               </ul>
             </div>
@@ -60,9 +63,8 @@ export default function Home() {
             <div className="bg-blue-950 h-screen overflow-hidden smooth-scroll divide-y divide-blue-200" id="grid-container">
               <Biography />
               <Experience />
-              <div className="h-96">Projects</div>
+              <Projects />
               <Languages />
-              <div className="h-96">last scroll</div>
             </div>
           </div>
         </div>

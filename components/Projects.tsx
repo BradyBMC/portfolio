@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from "react"
 
-type JobData = {
-    Company: string,
-    Date: string,
-    Position: string,
-    Description: string,
-    Skills: Array<string>,
+interface ProjectData {
+  Title: string,
+  Date: string,
+  Link: string,
+  Description: string,
+  Skills: Array<string>,
 }
 
-const Experience = () => {
-    // const [data, setData] = useState<JobData | null>(null);
-    const [data, setData] = useState<JobData[]>([]);
+const Projects = () => {
+    const [data, setData] = useState<ProjectData[]>([]);
     // const [isLoading, setLoading] = useState(null);
     // const [error, setError] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('/api/workapi');
+            const response = await fetch('/api/projectapi');
             const jsonData = await response.json();
             setData(jsonData);
             console.log(jsonData);
@@ -24,7 +23,7 @@ const Experience = () => {
         fetchData();
     }, []);
 
-    const display_exp = () => {
+    const display = () => {
         if (data === null) return (<div>...Loading</div>);
         return (
             <div className="">
@@ -37,8 +36,7 @@ const Experience = () => {
                             <div className="flex grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40 my-3 md:pb-2">
                                 <div className="text-center col-span-2">{job.Date}</div>
                                 <div className="col-span-4">
-                                    <div className="text-gray-50">{job.Position}</div>
-                                    <div>{job.Company}</div>
+                                    <div className="text-gray-50">{job.Title}</div>
                                     <div>{job.Description}</div>
                                     <div className="flex flex-wrap flex-row md:justify-start">
                                         {
@@ -61,16 +59,17 @@ const Experience = () => {
                 }
             </div>
         );
+       return (<div>My Projects Here</div>);
     };
 
     return (
-        <section id="experience" className="md:pb-12">
+        <section id="projects" className="md:pb-12">
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
-                {display_exp()}
+                {display()}
             </div>
 
         </section>
     )
 }
 
-export default Experience;
+export default Projects;
