@@ -38,7 +38,7 @@ export default function Home() {
           <div className="flex-none bg-red-500 overflow-y-auto">
             <div className="bg-blue-950 grid md:h-screen no-scrollbar">
               <Title />
-              <ul className="text-center text-gray-50" onClick={(event: React.SyntheticEvent) => {
+              <ul className="text-center text-gray-50 sm:pt-4" onClick={(event: React.SyntheticEvent) => {
                 event.preventDefault();
                 const target = event.target as HTMLAnchorElement;
                 const id = target.getAttribute('href')?.replace('#', '');
@@ -59,7 +59,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <div className="text-center space-x-16">
+              <div className="text-center space-x-16 sm:pt-4 sm:pb-4">
                 <FaGithub className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://github.com/BradyBMC", "_blank")} />
                 <FaLinkedin className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("https://www.linkedin.com/in/brady-chan-84416319a/", "_blank")} />
                 <FaFileAlt className="w-10 h-10 text-gray-50 inline hover:cursor-pointer hover:text-teal-300" onClick={() => window.open("Resume.pdf", "_blank")} />
