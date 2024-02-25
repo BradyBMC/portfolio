@@ -18,7 +18,6 @@ const Experience = () => {
             const response = await fetch('/api/workapi');
             const jsonData = await response.json();
             setData(jsonData);
-            console.log(jsonData);
         };
 
         fetchData();

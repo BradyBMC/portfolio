@@ -17,7 +17,6 @@ const Projects = () => {
             const response = await fetch('/api/projectapi');
             const jsonData = await response.json();
             setData(jsonData);
-            console.log(jsonData);
         };
 
         fetchData();
