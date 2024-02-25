@@ -34,7 +34,7 @@ const Experience = () => {
                 data.map((job, index) => {
                     return (
                     <div key = {index}>
-                            <div className="grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40">
+                            <div className="flex grid md:grid-cols-6 text-slate-400 rounded-lg hover:bg-blue-900 md:mr-40 my-3">
                                 <div className="text-center col-span-2">{job.Date}</div>
                                 <div className="col-span-4">
                                     <div className="text-gray-50">{job.Position}</div>
@@ -64,7 +64,7 @@ const Experience = () => {
     };
 
     return (
-        <section id="experience">
+        <section id="experience" className="md:pb-12">
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start text-gray-50">
                 {display_exp()}
             </div>

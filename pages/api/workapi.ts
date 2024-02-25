@@ -30,18 +30,18 @@ export default function handler(
       Skills: ['C++', 'React.js', 'C#', 'PostgreSQL', 'Kubernetes', 'Docker'],
     },
     {
-      Company: 'Researcher',
-      Date: 'Job 2',
-      Position: 'Software Engineer',
-      Description: 'Job 2',
-      Skills: ['x++', 'x'],
+      Company: 'Osaka University',
+      Date: 'March - August 2023',
+      Position: 'Artificial Intelligence Research Intern',
+      Description: 'Leveraged the NSD dataset and RISE method to invistigate stable diffusion and fMRI image reconstruction. I redesigned linear model to map fMRIs to latent representation and delivered final presentation showcasing the methodologies and findings.',
+      Skills: ['Python', 'Pytorch', 'Pandas', 'Matlab'],
     },
     {
-      Company: 'Researcher',
-      Date: 'Job 2',
+      Company: 'University of California Santa Cruz',
+      Date: 'June - September 2022',
       Position: 'Software Engineer',
-      Description: 'Job 2',
-      Skills: ['x++', 'x'],
+      Description: 'Employed a neural network to capture sequential playing patterns to learn the optimal strategies in Super Smash Bros Melee. Developed a pipeline for seamless game preprocessing and itegration to model training process.',
+      Skills: ['Python', 'Tensorflow'],
     }
   ]
 
