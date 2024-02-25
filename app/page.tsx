@@ -31,10 +31,10 @@ export default function Home() {
 
   return (
     <main className="mx-auto">
-      <div className="flex h-screen w-full">
+      <div className="flex md:h-screen w-full">
         <div className="flex flex-1 grid grid-cols-1 md:grid-cols-2">
           <div className="flex-none bg-red-500 overflow-y-auto">
-            <div className="flex-none bg-blue-950 grid h-screen no-scrollbar">
+            <div className="bg-blue-950 grid md:h-screen no-scrollbar">
               <Title />
               <ul className="text-center text-gray-50" onClick={(event: React.SyntheticEvent) => {
                 event.preventDefault();
@@ -58,12 +58,12 @@ export default function Home() {
                 </li>
               </ul>
               <div>
-                Final links here
+                Github, Linkedin, 
               </div>
             </div>
           </div>
           <div className="flex-1 grow bg-red-800 overflow-y-auto">
-            <div className="bg-blue-950 h-screen overflow-hidden smooth-scroll divide-blue-200" id="grid-container">
+            <div className="bg-blue-950 md:h-screen overflow-hidden smooth-scroll divide-blue-200" id="grid-container">
               <Biography />
               <Experience />
               <Projects />

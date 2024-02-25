@@ -27,7 +27,7 @@ const Biography = () => {
             </p>
             <br />
             <p>
-              You can find out more about my projects below, as well as a complete overview of my work experience on my resume.
+              You can find out more about my projects below, as well as my professional resume.
             </p>
             <br />
             <p>
