@@ -26,15 +26,15 @@ export default function handler(
       Company: 'Nawcwd',
       Date: 'October 2023 - Present',
       Position: 'Software Engineer',
-      Description: 'I worked as a full-stack web developer for the Navy\'s threat capability system, utilizing React.js for the frontend, C# to develop middleware services and RESTful APIs, and PostgreSQL for database retrieval and maintenance. Responsibilities included developing, testing, and deploying containerized microservices using Kubernetes and Docker.',
-      Skills: ['C++', 'React.js', 'C#', 'PostgreSQL', 'Kubernetes', 'Docker'],
+      Description: 'I am a CUDA developer who implements digital signal processing algorithms for the Navy\'s radar system, focused on developing clean code optimized for performance. During the development of CUDA programs, I meticulously write unit tests to verify the accuracy and speed of CUDA kernels, alongside comprehensive end-to-end tests to validate the inter process communication between modules.',
+      Skills: ['C', 'C++', 'CUDA', 'Python', 'Git', 'Digital Signal Processing'],
     },
     {
       Company: 'Osaka University',
       Date: 'March - August 2023',
       Position: 'Artificial Intelligence Research Intern',
       Description: 'Leveraged the NSD dataset and RISE method to invistigate stable diffusion and fMRI image reconstruction. I redesigned linear model to map fMRIs to latent representation and delivered final presentation showcasing the methodologies and findings.',
-      Skills: ['Python', 'Pytorch', 'Pandas', 'Matlab'],
+      Skills: ['Python', 'Pytorch', 'Pandas'],
     },
     {
       Company: 'University of California Santa Cruz',
