@@ -21,9 +21,9 @@ const Biography = () => {
             */}
             <br />
             <p>
-            Presently, I serve as a software engineer at Nawcwd, where I'm deeply engaged in developing high-performance software tailored to compute signal processing algorithms.
-            I am passionate about optimizations in algorithms, the intricacies of operating systems, and creating full-stack applications.
-            The challenges posed by these domains encapsulate the very essence of what I envision computer science to be - continually pushing the boundaries of innovation, unraveling these complex systems, and the ability to conceive and develop applications to fruition.
+            Presently, I serve as a software engineer at Nawcwd, where I'm deeply engaged in developing high-performance software to compute digital signal processing algorithms.
+            I am passionate about algorithm optimizations, GPGPU programming, and the intricacies of operating systems.
+            The challenges posed by these domains encapsulate the very essence of what I envision computer science to be - a complete understanding of the complex computer systems we use and the advancement of their computational power.
             </p>
             <br />
             <p>
